@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    border: none;
+}
+
+:root{
+    --cor01:#8C1843;
+    --cor02:#592EF2;
+    --cor03:#023059;
+    --cor04:#F2E205;
+}
+
+ .main > h1 {   
+    color: var(--cor03);
+    text-align: center;
+
+ }
+
+div > label {
+    font-weight: bold;
+    color: var(--cor03);
+}
+
+div > input {
+    color: var(--cor01);
+}
+
+body {
+    padding-top: 5vh;
+    background-image: url(images/76-760437_nyan-cat.png);
+    background-size: cover;
+    background-position: 80%;
+}
+
+.main{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+form {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box{
+    flex:1 1 100%;
+    position: relative;
+}
+
+.half-box {
+    flex:1 1 45%;
+    position: relative;
+}
+
+input{
+    border-bottom: 2px solid;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+}
+
+input,label {
+    display: block;
+    width: 100%;
+}
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+#agreement, #agreement-label{
+    display: inline-block;
+    width: auto;
+}
+#agreement {
+    margin-right:5px ;
+   
+}
+
+input:focus {
+    outline: none;
+}
+
+ a {
+    color: var(--cor04);
+}
+
+input[type="submit"]{
+    background-color: var(--cor01);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+input:hover{
+    border-color: var(--cor02);
+}
+
+#btn-submit:hover{
+    background-color: var(--cor02);
+}
